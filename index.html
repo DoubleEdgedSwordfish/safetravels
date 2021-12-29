@@ -11,21 +11,27 @@
 </head>
 
 <body>
-  <div class="main-container">
-    <!-- Header -->
+  <!-- Header && Hero -->
+  <div class="hero">
     <header class="header">
-      <nav class="nav">
-        <img src="im" alt="company-logo" class="logo">
-      </nav>
+      <div class="main-container">
+        <nav class="nav">
+          <img src="img/Logo.svg" alt="company-logo" class="logo">
+          <ul class="nav__links">
+            <li class="nav__link">Home</li>
+            <li class="nav__link">Places</li>
+            <li class="nav__link">Info</li>
+            <li class="nav__link">Reviews</li>
+            <li class="nav__link">FAQ</li>
+          </ul>
+        </nav>
     </header>
-
-
   </div>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="https://kit.fontawesome.com/3eb5bb5574.js" crossorigin="anonymous"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  <script src="https://kit.fontawesome.com/3eb5bb5574.js" crossorigin="anonymous"></script>
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')

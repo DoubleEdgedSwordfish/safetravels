@@ -1,0 +1,21 @@
+.header {
+}
+
+.hero {
+    height: 100vh;
+    background-image: url(/img/background-web.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 6em;
+}
+
+.nav {
+}
+
+.logo {
+    width: 50px;
+}
+.nav__links {
+}
+.nav__link {
+}
