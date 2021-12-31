@@ -11,21 +11,67 @@
 </head>
 
 <body>
-  <!-- Header && Hero -->
-  <div class="hero">
-    <header class="header">
-      <div class="main-container">
+  <!-- Header & Hero -->
+  <header class="header">
+    <div class="hero">
+      <div class="main__container">
         <nav class="nav">
-          <img src="img/Logo.svg" alt="company-logo" class="logo">
-          <ul class="nav__links">
-            <li class="nav__link">Home</li>
-            <li class="nav__link">Places</li>
-            <li class="nav__link">Info</li>
-            <li class="nav__link">Reviews</li>
-            <li class="nav__link">FAQ</li>
+          <img src="img/svg/Logo.svg" alt="company-logo" class="logo">
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Places</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Info</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Reviews</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">FAQ</a>
+            </li>
           </ul>
+
+          <button class="burger__cta">
+            <img src="/img/svg/burger-icon.svg" alt="mobile-menu" class="burger">
+          </button>
         </nav>
-    </header>
+        <div class="header__container">
+          <h1 class="header__title">Japan</h1>
+          <p class="header__description">Discover the land of the rising sun with us!</p>
+          <button class="header__cta">
+            <a class="header__anchor" href="#">Begin Journey</a>
+          </button>
+        </div>
+        <div class="header__form">
+          <form class="form">
+            <select name="destination" id="selectDestination" class="input__destination" required>
+              <option value="" disabled selected>Where are you going?</option>
+              <option value="tokyo">Tokyo</option>
+              <option value="osaka">Osaka</option>
+              <option value="kyoto">Kyoto</option>
+              <option value="hokkaido">Hokkaido</option>
+              <option value="hiroshima">Hiroshima</option>
+              <option value="okinawa">Okinawa</option>
+            </select>
+            <input type="date" class="check-in" placeholder="Check-in date" required>
+            <input type="date" class="check-out" required>
+            <input type="number" class="input__people" placeholder="Number of people" minlength="1" maxlength="10" required>
+              <button class="search__cta" type="submit">Search</button>
+          </form>
+        </div>
+      </div> <!-- Main Container Div! -->
+    </div>
+  </header>
+  <!--Places Section-->
+  <div class="main__container">
+    <div class="places">
+      <h1 class="places__title">Top places to visit</h1>
+    </div>
+
   </div>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
