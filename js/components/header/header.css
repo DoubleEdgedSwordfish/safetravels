@@ -3,7 +3,7 @@
   background-image: url(/img/images/background-web.png);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 6em;
+  background-position: center;
 }
 
 .nav {
@@ -13,6 +13,10 @@
   align-items: center;
 }
 
+.mobile__nav {
+  display: none;
+}
+
 .logo {
   height: 5em;
 }
@@ -20,18 +24,18 @@
 .nav__items {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   font-size: 2rem;
   color: white;
-  text-shadow: black 1px 0 10px;
+  text-shadow: var(--text-shadow);
 }
 
 .nav__item {
-  padding: 0 0.8em;
+  padding: 0 1em;
 }
 
 .nav__link {
   position: relative;
-  padding: 0 8px;
 }
 
 .nav__link::after {
@@ -59,7 +63,7 @@
 .header__title,
 .header__description {
   color: white;
-  text-shadow: black 1px 0 10px;
+  text-shadow: var(--text-shadow);
 }
 
 .header__title {
@@ -72,7 +76,7 @@
   font-size: 3rem;
 }
 .header__cta {
-  padding: 2em 4em;
+  padding: 1.2em 3em;
   display: inline-block;
   color: white;
   background-color: var(--secondary-color);
@@ -150,10 +154,65 @@
     background-image: url(/img/images/background-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+  }
+
+  .mobile__nav {
+    position: absolute;
+    display: inline-flex;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+    background-image: url(/img/images/mobile_nav.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: ease-out 0.5s;
+    transform: translateY(-100%);
+  }
+
+  .close__cta {
+    background-color: transparent;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    color: white;
+    text-shadow: var(--text-shadow);
+  }
+
+  .close__cta:active {
+    transform: scale(0.98);
+  }
+
+  .menu__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-shadow: var(--text-shadow);
+    width: 100vw;
+    height: 70vh;
+    margin-top: 6em;
+    padding: 0;
+  }
+
+  .menu__item {
+    font-size: 2rem;
+  }
+
+  .menu__link {
+    padding-left: 0.3em;
   }
 
   .logo {
     height: 4em;
+  }
+
+  .header__container {
+    margin-top: 5em;
   }
 
   .header__title {
@@ -169,13 +228,20 @@
   }
 
   .header__cta {
-    padding: 1em 1em;
+    padding: 1.5em 1em;
     font-size: 0.5rem;
+    margin-top: 3em;
+  }
+
+  .header__cta:hover {
+    box-shadow: inset 300px 0 0 0 white;
+    color: var(--secondary-color);
   }
 
   .form {
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: 7em;
     place-content: center;
     border-style: none;
   }
@@ -184,12 +250,12 @@
   .check-in,
   .check-out,
   .input__people {
-    padding-left: none;
+    margin-left: 0;
   }
 
   .search__cta {
-    margin-top: 0.4em;
-    width: 100%;
+    margin: 0.4em 0 0 0;
+    width: 50%;
   }
 
   .burger__cta {
@@ -200,12 +266,82 @@
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 420px) {
+  .logo {
+    width: 60%;
+  }
+
+  .burger__cta {
+    padding-left: 3em;
+  }
+
+  .burger__img {
+    width: 95%;
+  }
+}
+
 /* Tablet Query */
-@media screen and (max-width: 1020px) {
+@media screen and (min-width: 520px) and (max-width: 1020px) {
+  .hero {
+    background-image: url(/img/images/background-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .header__title {
+    margin-top: 0.5em;
+    font-size: 5.5rem;
+    font-weight: 500;
+  }
+
+  .header__description {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .header__cta {
+    padding: 2em 3em;
+    font-size: 0.5rem;
+  }
+
+  .form {
+    margin-top: 11em;
+  }
+
   .burger__cta {
     display: block;
   }
   .nav__items {
     display: none;
+  }
+}
+
+@media screen and (min-width: 520px) and (max-width: 980px) {
+  .form {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    place-content: center;
+    border-style: none;
+  }
+
+  .input__destination,
+  .check-in,
+  .check-out,
+  .input__people {
+    margin-left: 0;
+  }
+
+  .search__cta {
+    margin: 0.4em 0 0 0;
+    width: 70%;
+    min-width: 50%;
+  }
+
+  .header__cta:hover {
+    box-shadow: inset 300px 0 0 0 white;
+    color: var(--secondary-color);
   }
 }

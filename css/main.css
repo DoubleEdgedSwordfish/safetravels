@@ -8,13 +8,17 @@
   --light-gray: #707070;
   --blue-blackground: #193e6d;
   --custom-orange: #ec6639;
+
+  --text-shadow: black 1px 0 10px;
 }
 
 /* Todos CSS-wise:
   // General
   Customize the scroll bar
+  
   // Header Section
   Add nicely done fade-in animations for text/CTAs
+  Add some animations to the mobile nav links
   Make the nav bar fixed 
   Change the placeholder text for the date inputs
 
@@ -26,6 +30,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  scroll-behavior: smooth;
 }
 
 body {

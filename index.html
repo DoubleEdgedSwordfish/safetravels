@@ -12,17 +12,17 @@
 
 <body>
   <!-- Header & Hero -->
-  <header class="header">
+  <header class="header" id="header">
     <div class="hero">
       <div class="main__container">
         <nav class="nav">
           <img src="img/svg/Logo.svg" alt="company-logo" class="logo">
           <ul class="nav__items">
             <li class="nav__item">
-              <a class="nav__link" href="#">Home</a>
+              <a class="nav__link" href="#header">Home</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Places</a>
+              <a class="nav__link" href="#places">Places</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#">Info</a>
@@ -34,16 +34,45 @@
               <a class="nav__link" href="#">FAQ</a>
             </li>
           </ul>
-
+          <!--Mobile Nav-->
           <button class="burger__cta">
-            <img src="/img/svg/burger-icon.svg" alt="mobile-menu" class="burger">
+            <img src="/img/svg/burger-icon.svg" alt="mobile-menu" class="burger__img">
           </button>
+          <div class="mobile__nav">
+            <button class="close__cta">
+              <i class="fas fa-times fa-3x"></i>
+            </button>
+            <div class="container">
+              <ul class="menu__items">
+                <li class="menu__item">
+                  <i class="fas fa-home"></i>
+                  <a href="#" class="menu__link">Home</a>
+                </li>
+                <li class="menu__item">
+                  <i class="fas fa-map-marked-alt"></i>
+                  <a href="#places" class="menu__link">Places</a>
+                </li>
+                <li class="menu__item">
+                  <i class="fas fa-info-circle"></i>
+                  <a href="#" class="menu__link">Info</a>
+                </li>
+                <li class="menu__item">
+                  <i class="far fa-address-book"></i>
+                  <a href="#" class="menu__link">Reviews</a>
+                </li>
+                <li class="menu__item">
+                  <i class="far fa-question-circle"></i>
+                  <a href="#" class="menu__link">FAQs</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
         <div class="header__container">
           <h1 class="header__title">Japan</h1>
           <p class="header__description">Discover the land of the rising sun with us!</p>
           <button class="header__cta">
-            <a class="header__anchor" href="#">Begin Journey</a>
+            <a class="header__anchor" href="#places">Begin Journey</a>
           </button>
         </div>
         <div class="header__form">
@@ -59,8 +88,9 @@
             </select>
             <input type="date" class="check-in" placeholder="Check-in date" required>
             <input type="date" class="check-out" required>
-            <input type="number" class="input__people" placeholder="Number of people" minlength="1" maxlength="10" required>
-              <button class="search__cta" type="submit">Search</button>
+            <input type="number" class="input__people" placeholder="Number of people" minlength="1" maxlength="10"
+              required>
+            <button class="search__cta" type="submit">Search</button>
           </form>
         </div>
       </div> <!-- Main Container Div! -->
@@ -68,8 +98,74 @@
   </header>
   <!--Places Section-->
   <div class="main__container">
-    <div class="places">
+    <div class="places" id="places">
       <h1 class="places__title">Top places to visit</h1>
+      <p class="places__description">Explore Japan's most outstanding and emblematic locations</p>
+      <div class="places__grid">
+        <div class="image">
+          <img src="img/images/osaka-castle-web.png" alt="japanese-monument" class="places__location">
+          <div class="image__overlay image__overlay--blur">
+            <div class="image__content">
+              <button class="image__button">Travel</button>
+              <h2 class="image__title">Osaka Castle</h2>
+              <p class="image__city">Osaka</p>
+                <span class="image__star"><i class="fas fa-star"></i></span>
+                <span class="image__star"><i class="fas fa-star"></i></span>
+                <span class="image__star"><i class="fas fa-star"></i></span>
+                <span class="image__star"><i class="fas fa-star"></i></span>
+                <span class="image__star"><i class="fas fa-star"></i></span>
+                <span class="image__review">(302 reviews)</span>
+            </div>
+          </div>
+        </div>
+        <div class="image">
+          <img src="img/images/sensoji-web.png" alt="japanese-monument" class="places__location"><div class="image__overlay image__overlay--blur">
+            <div class="image__content">
+              <button class="image__button">Travel</button>
+              <h2 class="image__title">Senso-ji</h2>
+              <p class="image__city">Tokyo</p>
+                <span class="image__star"><i class="fas fa-star"></i></span>
+                <span class="image__star"><i class="fas fa-star"></i></span>
+                <span class="image__star"><i class="fas fa-star"></i></span>
+                <span class="image__star"><i class="fas fa-star"></i></span>
+                <span class="image__star"><i class="far fa-star"></i></span>
+                <span class="image__review">(202 reviews)</span>
+            </div>
+          </div>
+        </div>
+        <div class="image">
+          <img src="img/images/kiyomizu-dera-web.png" alt="japanese-monument" class="places__location">
+          <div class="image__overlay image__overlay--blur">
+            <div class="image__content">
+              <button class="image__button">Travel</button>
+              <h2 class="image__title">Kiyomizu-dera</h2>
+              <p class="image__city">Kyoto</p>
+                <span class="image__star"><i class="fas fa-star"></i></span>
+                <span class="image__star"><i class="fas fa-star"></i></span>
+                <span class="image__star"><i class="fas fa-star"></i></span>
+                <span class="image__star"><i class="fas fa-star"></i></span>
+                <span class="image__star"><i class="fas fa-star"></i></span>
+                <span class="image__review">(604 reviews)</span>
+            </div>
+          </div>
+        </div>
+        <div class="image">
+          <img src="img/images/kinkakuji-web.png" alt="japanese-monument" class="places__location">
+          <div class="image__overlay image__overlay--blur">
+            <div class="image__content">
+              <button class="image__button">Travel</button>
+              <h2 class="image__title">Kinkaku-ji</h2>
+              <p class="image__city">Kyoto</p>
+                <span class="image__star"><i class="fas fa-star"></i></span>
+                <span class="image__star"><i class="fas fa-star"></i></span>
+                <span class="image__star"><i class="fas fa-star"></i></span>
+                <span class="image__star"><i class="fas fa-star"></i></span>
+                <span class="image__star"><i class="fas fa-star"></i></span>
+                <span class="image__review">(178 reviews)</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>
