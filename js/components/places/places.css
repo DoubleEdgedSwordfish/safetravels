@@ -5,6 +5,7 @@
 .places__title {
   font-size: 6.5rem;
   text-align: center;
+  margin-bottom: .4em;
   color: var(--primary-color);
 }
 

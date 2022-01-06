@@ -1,0 +1,56 @@
+.footer {
+  color: white;
+  background-color: var(--blue-blackground);
+  margin: 0 auto;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+.footer__locations {
+    text-align: left;
+}
+.footer__discover, .contact__title {
+    text-transform: uppercase;
+
+}
+.locations__list--left, .locations__list--right {
+    line-height: 2em;
+    padding-left: 0;
+}
+.locations__item {
+}
+.locations__link {
+}
+.locations__list--right {
+}
+.footer__newsletter {
+}
+.footer__subscribe {
+}
+.footer__form {
+}
+.footer__input {
+}
+.footer__submit {
+}
+.far {
+}
+.fa-paper-plane {
+}
+.footer__contact {
+}
+.contact__title {
+}
+.contact__address {
+}
+.contact__links {
+}
+.contact__link {
+}
