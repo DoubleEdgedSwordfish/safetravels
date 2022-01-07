@@ -2,8 +2,7 @@
   color: white;
   background-color: var(--blue-blackground);
   margin: 0 auto;
-  padding-left: 3em;
-  padding-right: 3em;
+  padding: 2em;
 }
 
 .footer__container {
@@ -14,43 +13,126 @@
 }
 
 .footer__locations {
-    text-align: left;
+  text-align: left;
 }
-.footer__discover, .contact__title {
-    text-transform: uppercase;
 
+.footer__discover,
+.contact__title {
+  text-transform: uppercase;
 }
-.locations__list--left, .locations__list--right {
-    line-height: 2em;
-    padding-left: 0;
-}
-.locations__item {
-}
-.locations__link {
-}
+
+.locations__list--left,
 .locations__list--right {
+  line-height: 2em;
+  padding-left: 0;
 }
+
+.locations__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__discover {
+  margin-bottom: 0;
+}
+
+.locations__link:hover {
+  color: var(--custom-orange);
+}
+
 .footer__newsletter {
+  font-size: 0.8rem;
 }
 .footer__subscribe {
+  font-weight: 300;
+  margin-bottom: 0.5em;
 }
 .footer__form {
+  display: flex;
 }
+
 .footer__input {
+  font-size: 0.9rem;
+  padding: 1.1em;
+  background-color: #0b163b;
+  color: white;
+  width: 100%;
+  border-style: none;
+  resize: vertical;
 }
 .footer__submit {
+  padding: 1.2em;
+  background-color: var(--custom-orange);
+  color: white;
 }
-.far {
+
+.footer__submit:hover {
+  background-color: white;
+  color: var(--custom-orange);
+  transition: 250ms;
 }
-.fa-paper-plane {
+
+.footer__submit:active {
+  transform: scale(0.98);
 }
+
 .footer__contact {
+  font-size: 0.9rem;
 }
+
 .contact__title {
+  margin-bottom: 0.5em;
 }
+
 .contact__address {
+  font-weight: 300;
 }
 .contact__links {
+  display: flex;
+  flex-direction: column;
+  color: var(--custom-orange);
+  font-size: 1rem;
 }
+
 .contact__link {
+  margin-top: 0.5em;
+}
+
+.contact__link:hover {
+  color: white;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1120px) {
+  .footer {
+    padding: 2em 4em;
+  }
+  .footer__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    place-content: center;
+  }
+  .locations__flex {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .locations__list--right {
+    margin-left: 3em;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 700px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+  }
+  .footer__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
+  }
+.footer__discover {
+  text-align: left;
+}
 }
