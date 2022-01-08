@@ -47,6 +47,7 @@
 .accordion__down {
   font-size: 2.2em;
   transition: ease-out 0.3s;
+  padding-left: .2em;
 }
 
 .accordion__content {
@@ -183,7 +184,7 @@
     font-size: 1.3rem;
   }
   .accordion__question {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .accordion__text {
     font-size: 1.3rem;

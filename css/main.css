@@ -10,9 +10,11 @@
   --custom-orange: #ec6639;
 
   --text-shadow: black 1px 0 10px;
+
+  --nav-height: 50px;
 }
 
-/* Todos CSS-wise:
+/* Todos:
   // General
   Customize the scroll bar
   

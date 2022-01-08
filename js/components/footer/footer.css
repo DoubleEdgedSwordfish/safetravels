@@ -61,10 +61,12 @@
   border-style: none;
   resize: vertical;
 }
+
 .footer__submit {
   padding: 1.2em;
   background-color: var(--custom-orange);
   color: white;
+  overflow: hidden;
 }
 
 .footer__submit:hover {
@@ -101,6 +103,15 @@
 
 .contact__link:hover {
   color: white;
+}
+
+.footer__copyright {
+  background-color: #14335c;
+  color: white;
+  padding: 1em 3em;
+  font-size: .5rem;
+  font-weight: 300;
+  text-align: center;
 }
 
 @media screen and (min-width: 700px) and (max-width: 1120px) {
