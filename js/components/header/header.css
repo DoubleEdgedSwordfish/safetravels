@@ -39,9 +39,6 @@
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-.logo-white {
-}
-
 .nav__items {
   display: flex;
   flex-direction: row;
@@ -148,12 +145,11 @@
 }
 
 .check-in {
+
 }
 .check-out {
 }
-.input__people::placeholder {
-  color: #1174c9;
-}
+
 
 .search__cta {
   color: white;
@@ -173,19 +169,20 @@
 /* Mobile nav  */
 @media screen and (min-width: 320px) and (max-width: 1020px) {
   .mobile__nav {
-    position: absolute;
+    position: fixed;
     display: inline-flex;
     top: 0;
     left: 0;
-    overflow: hidden;
+    right: 0;
+    bottom: 0;
     height: 100vh;
     width: 100%;
     z-index: 999;
-    background-image: url(/img/images/mobile_nav.png);
+    background-image: url(/img/svg/mobile_nav.svg);
     background-repeat: no-repeat;
     background-size: cover;
     transition: ease-out 0.5s;
-    transform: translateY(-100%);
+    transform: translateY(-100%); 
   }
 
   .mobile__nav--open {
@@ -194,6 +191,10 @@
 
   .mobile__nav--close {
     transform: translateY(-100%);
+  }
+
+  .mobile__nav i {
+    cursor: pointer;
   }
 
   .close__cta {
@@ -240,6 +241,8 @@
     padding-left: 0.3em;
   }
 }
+
+
 
 @media screen and (min-width: 320px) and (max-width: 520px) {
   .hero {
@@ -322,6 +325,11 @@
     background-size: cover;
     background-position: center;
     position: relative;
+  }
+
+  .mobile__nav {
+    /* If needs be, add a new mobile background image to the tablet menu */
+    /* background-image: url(/img/svg/tablet-nav.svg); */
   }
 
   .header__title {

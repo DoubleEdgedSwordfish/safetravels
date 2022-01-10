@@ -21,14 +21,18 @@
   // Header Section
   Add nicely done fade-in animations for text/CTAs
   Add some animations to the mobile nav links
-  Make the nav bar fixed 
+  Add a new background image to the tablet menu
   Change the placeholder text for the date inputs
 
+  // Places
+  Add a new section/html page to the travel button
+  
   // Reviews
   Make the grid responsive
-
+  
   // Completed
   Add animations on hover effects for the nav bar *** Done
+  Make the nav bar fixed 
 */
 
 html {
@@ -98,6 +102,14 @@ button {
   cursor: pointer;
 }
 
+input {
+  outline: none;
+}
+
+::placeholder {
+  color: #1174c9;
+}
+
 input,
 select {
   width: 100%;
@@ -123,12 +135,6 @@ hr {
   padding: 0;
 }
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
 audio,
 canvas,
 iframe,
@@ -145,18 +151,6 @@ video {
 textarea {
   resize: vertical;
 }
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
 
 .hidden,
 [hidden] {

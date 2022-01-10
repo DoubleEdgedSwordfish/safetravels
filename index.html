@@ -48,7 +48,7 @@
               <ul class="menu__items">
                 <li class="menu__item">
                   <i class="fas fa-home"></i>
-                  <a href="#home" class="menu__link">Home</a>
+                  <a href="#header" class="menu__link">Home</a>
                 </li>
                 <li class="menu__item">
                   <i class="fas fa-map-marked-alt"></i>
@@ -88,8 +88,8 @@
               <option value="hiroshima">Hiroshima</option>
               <option value="okinawa">Okinawa</option>
             </select>
-            <input type="date" class="check-in" placeholder="Check-in date" required>
-            <input type="date" class="check-out" required>
+            <input type="text" class="check-in" placeholder="Check-in date" onfocus="(this.type = 'date')" required>
+            <input type="text" class="check-out" placeholder="Check-out date" onfocus="(this.type = 'date')" required>
             <input type="number" class="input__people" placeholder="Number of people" minlength="1" maxlength="10"
               required>
             <button class="search__cta" type="submit">Search</button>

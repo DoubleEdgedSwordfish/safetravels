@@ -62,6 +62,10 @@
   resize: vertical;
 }
 
+.footer__input::placeholder {
+  color: #ccc;
+}
+
 .footer__submit {
   padding: 1.2em;
   background-color: var(--custom-orange);
