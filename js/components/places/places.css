@@ -5,7 +5,7 @@
 .places__title {
   font-size: 5rem;
   text-align: center;
-  padding-top: .5em;
+  padding-top: .2em;
   margin-bottom: .4em;
   color: var(--primary-color);
 }
@@ -21,7 +21,7 @@
   place-content: center;
   grid-template-columns: 2fr 2fr;
   grid-row: auto;
-  gap: 3em;
+  gap: 2em;
 }
 
 .places__location {

@@ -47,23 +47,14 @@ function navScroll() {
 }
 
 // Date Input Logic
-const checkInInput = document.querySelector('.check-in');
-const checkOutInput = document.querySelector('.check-out');
+const checkInInput = document.querySelector(".check-in");
+const checkOutInput = document.querySelector(".check-out");
+const todaysDate = new Date().toISOString().slice(0, 10);
 
-checkInInput.addEventListener('focus', () => {
-  getDate();
-})
+checkInInput.addEventListener("focus", () => {
+  checkInInput.value = todaysDate;
+});
 
-function getDate() {
-  const date = new Date();
-  const formattedDate = date.toLocaleDateString();
-/*   const day = date.getDate();
-  const month = date.getMonth() + 1;
-  const year = date.getFullYear();
-  const dateString = year + '/' + month + '/' + day; */
-  checkInInput.value = formattedDate;
-  checkOutInput.value = formattedDate;
-}
-
-
-
+checkOutInput.addEventListener("focus", () => {
+  checkOutInput.value = todaysDate;
+});
