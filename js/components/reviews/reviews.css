@@ -34,10 +34,35 @@
   text-align: center;
 }
 
+.reviews__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em 0;
+}
+.prev__button, .next__button {
+  color: white; 
+  padding: 1.2em;
+  background-color: #1D4879;
+  transition: 250ms;
+  border-radius: 5px;
+}
+
+.prev__button:hover, .next__button:hover {
+  color: #1D4879;
+  background-color: white;
+}
+
 .reviews__card {
   background-color: #1d4879;
   padding: 1.5em 1.5em;
   margin-bottom: 4em;
+  opacity: 0.4;
+}
+
+.card-visible {
+  opacity: 1;
+
 }
 
 .reviews__star,
@@ -47,12 +72,11 @@
 }
 
 .reviews__flexbox {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-    
 
 .reviews__review {
   margin: 0.7em 0;
