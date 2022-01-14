@@ -1,35 +1,36 @@
 import "./reviews.css";
 
-const prevButton = document.querySelector(".prev__button");
-const nextButton = document.querySelector(".next__button");
-const slides = document.querySelectorAll(".reviews__card");
-const totalSlides = slides.length;
-let slidePosition = 0;
-
-/* nextButton.addEventListener("click", moveToNextSlide)
-function moveToNextSlide() {
-    if (slidePosition === totalSlides - 1) {
-        slidePosition = 0;
-    } else {
-        slidePosition++;
-    }
-    updateSlidePosition()
-}
-
-function updateSlidePosition() {
-    for (let slide of slides) {
-        slide.classList.remove('card--visible');
-    }
-    slides[slidePosition].classList.add('card--visible')
-}
-
-
-prevButton.addEventListener('click', moveToPrevSlide)
-function moveToPrevSlide() {
-      if (slidePosition === 0 ) {
-        slidePosition = 0;
-    } else {
-        slidePosition--;
-    }
-}
- */
+let swiper = new Swiper(".carousel-slider", {
+    slidesPerView: "2",
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      520: {
+        slidesPerView: 1.2,
+      },
+      630: {
+        slidesPerView: 1.3,
+        spaceBetween: 20,
+      },
+      980: {
+        slidesPerView: 1.7,
+        spaceBetween: 5,
+      },
+      1120: {
+        slidesPerView: 2.2,
+        spaceBetween: 10,
+      },
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  

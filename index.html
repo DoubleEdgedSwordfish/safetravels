@@ -5,7 +5,7 @@
   <title>Safe Travels</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -95,7 +95,7 @@
             <button class="search__cta" type="submit">Search</button>
           </form>
         </div>
-      </div> 
+      </div>
     </div>
   </header>
   <!--Places Section-->
@@ -206,99 +206,119 @@
   </div>
   <!--Reviews Section-->
   <div class="reviews" id="reviews">
-    <div class="main__container">
-      <h2 class="reviews__title">Reviews</h2>
-      <p class="reviews__subtitle">Our clients' testimonials are the best proof of our high level of service</p>
-      <div class="reviews__buttons">
-        <button class="prev__button">
-          <i class="fas fa-chevron-left fa-2x"></i>
-        </button>
-        <button class="next__button">
-          <i class="fas fa-chevron-right fa-2x"></i>
-        </button>
+    <h2 class="reviews__title">Reviews</h2>
+    <p class="reviews__subtitle">Our clients' testimonials are the best proof of our high level of service</p>
+    <div class="swiper carousel-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" id="swiper-slide">
+          <article class="reviews__card">
+            <span class="reviews__star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="reviews__star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="reviews__star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="reviews__star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="reviews__star">
+              <i class="fas fa-star"></i>
+            </span>
+            <p class="reviews__review">
+              Leslie was an excellent Travel Agent for us and considered our unique needs as she
+              planned our itinerary.
+              Every suggestion she made was excellent.
+            </p>
+            <p class="reviews__critic">
+              <i> - Scott Travis </i>
+            </p>
+          </article>
+        </div>
+        <div class="swiper-slide" id="swiper-slide">
+          <article class="reviews__card">
+              <span class="reviews__star">
+                <i class="fas fa-star"></i>
+              </span>
+              <span class="reviews__star">
+                <i class="fas fa-star"></i>
+              </span>
+              <span class="reviews__star">
+                <i class="fas fa-star"></i>
+              </span>
+              <span class="reviews__star">
+                <i class="fas fa-star"></i>
+              </span>
+              <span class="reviews__star">
+                <i class="far fa-star"></i>
+              </span>
+            <p class="reviews__review">
+              Impressed by the service - everything was well organised and the cost was less than
+              booking direct.
+            </p>
+            <p class="reviews__critic">
+              <i> - Joseph Joestar</i>
+            </p>
+          </article>
+        </div>
+        <div class="swiper-slide" id="swiper-slide">
+          <article class="reviews__card">
+            <span class="reviews__star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="reviews__star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="reviews__star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="reviews__star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="reviews__star">
+              <i class="fas fa-star"></i>
+            </span>
+            <p class="reviews__review">
+              Very professional service.
+              I would be confident and happy to book through Safe Travels again.
+              <br>
+              Thank you
+            </p>
+            <p class="reviews__critic">
+              <i> - Lisa Anderson </i>
+            </p>
+          </article>
+        </div>
+        <div class="swiper-slide" id="swiper-slide">
+          <article class="reviews__card">
+            <span class="reviews__star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="reviews__star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="reviews__star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="reviews__star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="reviews__star">
+              <i class="far fa-star"></i>
+            </span>
+            <p class="reviews__review">
+              Very happy with all aspects, easy to book online, timely reminders and all information
+              regarding travel bookings, highly recommend.
+            </p>
+            <p class="reviews__critic">
+              <i> - Mark Anthony </i>
+            </p>
+          </article>
+        </div>
       </div>
-    </div>
-    <div class="reviews__grid">
-      <article class="reviews__card card-visible">
-        <span class="reviews__star">
-          <i class="fas fa-star"></i>
-        </span>
-        <span class="reviews__star">
-          <i class="fas fa-star"></i>
-        </span>
-        <span class="reviews__star">
-          <i class="fas fa-star"></i>
-        </span>
-        <span class="reviews__star">
-          <i class="fas fa-star"></i>
-        </span>
-        <span class="reviews__star">
-          <i class="fas fa-star"></i>
-        </span>
-        <div class="reviews__flexbox">
-          <p class="reviews__review">
-            Leslie was an excellent Travel Agent for us and considered our unique needs as she planned our itinerary.
-            Every suggestion she made was excellent.
-          </p>
-          <p class="reviews__critic">
-            <i> - Scott Travis </i>
-          </p>
-
-        </div>
-      </article>
-      <article class="reviews__card">
-        <span class="reviews__star">
-          <i class="fas fa-star"></i>
-        </span>
-        <span class="reviews__star">
-          <i class="fas fa-star"></i>
-        </span>
-        <span class="reviews__star">
-          <i class="fas fa-star"></i>
-        </span>
-        <span class="reviews__star">
-          <i class="fas fa-star"></i>
-        </span>
-        <span class="reviews__star">
-          <i class="far fa-star"></i>
-        </span>
-        <div class="reviews__flexbox">
-          <p class="reviews__review">
-            Impressed by the service - everything was well organised and the cost was less than booking direct.
-          </p>
-          <p class="reviews__critic">
-            <i> - Joseph Joestar</i>
-          </p>
-        </div>
-      </article>
-      <article class="reviews__card">
-        <span class="reviews__star">
-          <i class="fas fa-star"></i>
-        </span>
-        <span class="reviews__star">
-          <i class="fas fa-star"></i>
-        </span>
-        <span class="reviews__star">
-          <i class="fas fa-star"></i>
-        </span>
-        <span class="reviews__star">
-          <i class="fas fa-star"></i>
-        </span>
-        <span class="reviews__star">
-          <i class="fas fa-star"></i>
-        </span>
-        <div class="reviews__flexbox">
-          <p class="reviews__review">
-            Very professional service, I had one query and it was answered in a very timely manner.
-            I would be confident and happy to book through Safe Travels again.
-            <br>
-            Thank you
-          </p>
-          <p class="reviews__critic">
-            <i> - Lisa Anderson </i>
-          </p>
-        </div>
-      </article>
+      <div class="swiper-pagination" id="swiper-pagination"></div>
     </div>
   </div>
   <!--Faq Section-->
@@ -411,7 +431,10 @@
         </header>
         <div class="accordion__content">
           <p class="accordion__text">
-            The cherry blossom is in full bloom at a slightly different time every year, and it is quite different depending on the region, but in the suburbs of Tokyo, it is often in full bloom from late March to early April, and even later in the northern region and earlier in the southern region (in Okinawa it is from late January to early February).
+            The cherry blossom is in full bloom at a slightly different time every year, and it is quite different
+            depending on the region, but in the suburbs of Tokyo, it is often in full bloom from late March to early
+            April, and even later in the northern region and earlier in the southern region (in Okinawa it is from late
+            January to early February).
           </p>
           <div class="accordion__rating">
             <h3 class="rating__title">Was this article helpful?</h3>
@@ -461,7 +484,9 @@
         </header>
         <div class="accordion__content">
           <p class="accordion__text">
-            There are many winter activities that you can enjoy in Japan, from winter sports such as skiing and snowboarding to activities such as snow shoeing, sledding, snow mobiling, and visiting winter festivals. Please see the following page for information on snow activities in Japan:
+            There are many winter activities that you can enjoy in Japan, from winter sports such as skiing and
+            snowboarding to activities such as snow shoeing, sledding, snow mobiling, and visiting winter festivals.
+            Please see the following page for information on snow activities in Japan:
             <br>
             <br>
             <a class="accordion__link" href="https://www.japan.travel/snow/en/" target="_blank">Snow Activities</a>
@@ -581,6 +606,7 @@
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="https://kit.fontawesome.com/3eb5bb5574.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script>
