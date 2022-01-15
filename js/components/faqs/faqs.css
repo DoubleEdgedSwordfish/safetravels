@@ -52,13 +52,15 @@
 
 .accordion__content {
   color: black;
-  display: none; /* Todo: Remove display and properly animate the accordion */
+  display: none;
+ /* Todo: Remove display and properly animate the accordion */
 }
 
 .accordion__text {
   margin: 0.5em 0;
   font-size: 1.4rem;
   font-weight: 300;
+
 }
 .accordion__rating {
   border-top: 1px solid #ccc;

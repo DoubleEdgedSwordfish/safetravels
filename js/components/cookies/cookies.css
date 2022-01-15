@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+.cookies {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.cookies__container {
+  background: linear-gradient(260deg, #9b6c50 0%, #4f2626 100%);
+  height: 18rem;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.cookies__image {
+  display: inline-block;
+  width: 28%;
+  height: auto;
+  max-height: 9em;
+  padding: 0 0 0 1.5em;
+}
+
+.cookies__content {
+  padding: 1em 1.5em;
+}
+
+.cookies__title,
+.cookies__text {
+  color: white;
+  text-align: left;
+}
+
+.cookies__title {
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.cookies__text {
+  font-size: 1.4rem;
+}
+
+.cookies__cta {
+  min-width: 25%;
+  color: #4f2626;
+  border-radius: 8px;
+  padding: 0.7em 2em;
+  transition: 250ms;
+}
+
+.cookies__cta:hover {
+  background-color: #9b6c50;
+  color: white;
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+  .cookies {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1030px) {
+  .cookies__container {
+    width: 80%;
+    height: 15rem;
+  }
+  .cookies__content {
+    padding: 1em 1em 1em 1.5em;
+  }
+  .cookies__title {
+    font-size: 1.5rem;
+  }
+  .cookies__text {
+    font-size: 1.3rem;
+  }
+  .cookies__cta {
+    padding: 0.5em 1.8em;
+  }
+}
+
+@media screen and (min-width: 630px) and (max-width: 700px) {
+  .cookies__container {
+    width: 80%;
+  }
+  .cookies__content {
+    padding: 1em 1em 1em 1.5em;
+  }
+  .cookies__image {
+    width: 23%;
+  }
+  .cookies__title {
+    font-size: 1.4rem;
+  }
+  .cookies__text {
+    font-size: 1.3rem;
+  }
+  .cookies__cta {
+    padding: 0.4em 1.5em;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 630px) {
+  .cookies {
+    padding: 0;
+  }
+  .cookies__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .cookies__container {
+    height: 19rem;
+    padding: 2em 0 1em 0;
+  }
+  .cookies__content {
+    padding: 1em;
+  }
+  .cookies__image {
+    width: 23%;
+  }
+  .cookies__title,
+  .cookies__text,
+  .cookies__cta {
+    text-align: center;
+  }
+  .cookies__title {
+    font-size: 1.4rem;
+  }
+  .cookies__text {
+    font-size: 1.2rem;
+  }
+  .cookies__cta {
+    padding: 0.5em 2.5em;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .cookies__container {
+    padding: 2em 0 .5em 0;
+    width: 75%;
+  }
+  .cookies__title {
+    font-size: 1.3rem;
+  }
+  .cookies__text {
+    font-size: 1.1rem;
+  }
+  .cookies__cta {
+    margin-top: 1em;
+  }
+}

@@ -1,6 +1,11 @@
 import "./reviews.css";
 
 let swiper = new Swiper(".carousel-slider", {
+  autoplay: {
+    spaceBetween: 20,
+    delay: 2500,
+    disableOnInteraction: false,
+  },
     slidesPerView: "2",
     breakpoints: {
       320: {

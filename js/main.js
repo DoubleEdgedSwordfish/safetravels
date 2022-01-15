@@ -4,6 +4,7 @@ import "./components/info/info";
 import "./components/reviews/reviews";
 import "./components/faqs/faqs";
 import "./components/footer/footer";
+import './components/cookies/cookies';
 
 const infoTitle = document.querySelector('.info__title');
 const infoSubtitle = document.querySelector('.info__description');
