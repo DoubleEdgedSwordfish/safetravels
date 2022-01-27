@@ -5,9 +5,9 @@ const accordionHeader = document.querySelectorAll(".accordion__header");
 accordionHeader.forEach((header) => {
   header.addEventListener("click", () => {
     // If an accordion is already open then close it
-    const isAccordionOpen = document.querySelector('.accordion__header.active');
+    const isAccordionOpen = document.querySelector(".accordion__header.active");
     if (isAccordionOpen && isAccordionOpen !== accordionHeader) {
-      isAccordionOpen.classList.toggle('active');
+      isAccordionOpen.classList.toggle("active");
       isAccordionOpen.nextElementSibling.style.maxHeight = 0;
     }
 
@@ -23,16 +23,23 @@ accordionHeader.forEach((header) => {
 });
 
 // Button rating logic
-const positiveBtn = document.querySelector(".rating__cta.positive");
+/* const positiveBtns = document.querySelectorAll(".rating__cta.positive");
 const ratingSearch = document.querySelectorAll(".rating__search");
+const firstRating = document.querySelector(".rating__positive");
+const secondRating = document.querySelector(".rating__negative");
+ */
+/* let positiveRating = firstRating.innerHTML;
+let negativeRating = secondRating.innerHTML;
 
-let randomNum = Math.floor(Math.random() * 100);
-ratingSearch.forEach(ratings => {
-  ratings.childNodes.forEach(rating => {
-    /* rating.textContent = `Search ${randomNum} out of ${randomNum * 2 / 1} found this helpful.` */
-  })
+positiveBtns.forEach((buttons) => {
+  buttons.addEventListener("click", () => {
+    positiveRating++;
+    firstRating.innerHTML = positiveRating;
+    buttons.removeEventListener('click');
+  });
+});
+ */
+/* let randomNum = Math.floor(Math.random() * 100); */
+/* ratingSearch.forEach(ratings => {
 })
-
-positiveBtn.addEventListener('click', () => {
-  console.log("clicked")
-})
+ */

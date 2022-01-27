@@ -13,7 +13,6 @@
   font-weight: 400;
 }
 .accordion__article {
-  border: 1px solid #ccc;
   border-radius: 3px;
   margin-bottom: 0.7em;
   overflow: hidden;
@@ -54,11 +53,12 @@
 }
 
 .accordion__content {
-  color: black;
+  color: #666666;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s;
   padding:0 1em;
+  border: 1px solid #ccc;
 }
 
 .accordion__text {
@@ -79,6 +79,7 @@
 .rating__title {
   font-weight: bold;
   margin: 0.5em 0;
+  color: black;
 }
 
 .rating__flex {
@@ -122,12 +123,6 @@
   transform: scale(0.98);
 }
 
-.rating__search {
-  font-weight: 300;
-  font-size: 1.4rem;
-  margin: 0 0 0.5em 0;
-}
-
 @media screen and (min-width: 711px) and (max-width: 940px) {
   .rating__cta {
     padding: 0.2em 1.2em;
@@ -166,9 +161,6 @@
   .rating__cta {
     padding: 0.3em 1em;
     font-size: 1.8rem;
-  }
-  .rating__search {
-    font-size: 1.2rem;
   }
 }
 
