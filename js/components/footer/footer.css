@@ -2,7 +2,7 @@
   color: white;
   background-color: var(--blue-blackground);
   margin: 0 auto;
-  padding: 2em;
+  padding: 1.5em;
 }
 
 .footer__container {
@@ -72,6 +72,8 @@
   background-color: var(--custom-orange);
   color: white;
   overflow: hidden;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .footer__submit:hover {
@@ -189,9 +191,6 @@
 }
 
 @media screen and (min-width: 700px) and (max-width: 1120px) {
-  .footer {
-    padding: 2em 4em;
-  }
   .footer__container {
     display: grid;
     grid-template-columns: 2fr 1fr;

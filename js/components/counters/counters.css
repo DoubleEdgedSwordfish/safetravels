@@ -1,0 +1,9 @@
+.counters {
+    background-image: url(/img/images/counter-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #ba21269c;
+    width: 100%;
+    height: 60vh;
+    background-blend-mode: overlay;
+}
