@@ -1,9 +1,44 @@
 .counters {
-    background-image: url(/img/images/counter-background.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #ba21269c;
-    width: 100%;
-    height: 60vh;
-    background-blend-mode: overlay;
+  background-image: url(/img/images/counter-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #ba21269c;
+  width: 100%;
+  height: 60vh;
+  background-blend-mode: overlay;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:0 10em;
+    margin: 0 auto;
+    padding: 0 4em;
+}
+
+.counter {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.counter-icon {
+    font-size: 3.3rem;
+    padding-bottom: .4em;
+}
+
+.counter__number {
+    font-size: 3rem;
+}
+
+.counter__title {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-shadow: var(--text-shadow);
 }
