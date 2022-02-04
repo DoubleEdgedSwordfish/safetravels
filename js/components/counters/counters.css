@@ -1,44 +1,113 @@
 .counters {
-  background-image: url(/img/images/counter-background.jpeg);
+  /*   background-image: url(/img/images/counter-background.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #ba21269c;
-  width: 100%;
-  height: 60vh;
-  background-blend-mode: overlay;
+  background-color: #ba21269c; */
+  height: 70vh;
+  background-color: #ba212677;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.counter__image {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -10;
+  max-width: 100%;
+  height: auto;
+  min-height: 100%;
+
 }
 
 .counter__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap:0 10em;
-    margin: 0 auto;
-    padding: 0 4em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "one two three";
+  gap: 0 10em;
+  margin: 0 auto;
+  padding: 0 4em;
 }
 
 .counter {
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
+
 .counter-icon {
-    font-size: 3.3rem;
-    padding-bottom: .4em;
+  font-size: 3.3rem;
+  padding-bottom: 0.2em;
 }
 
 .counter__number {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .counter__title {
-    margin: 0;
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-shadow: var(--text-shadow);
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.counter-icon,
+.counter__number,
+.counter__title {
+  text-shadow: var(--text-shadow);
+}
+
+.first-counter {
+  grid-area: one;
+}
+
+.second-counter {
+  grid-area: two;
+}
+
+.last-counter {
+  grid-area: three;
+}
+
+@media screen and (min-width: 320px) and (max-width: 920px) {
+  .counter__grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "one two"
+      "three three";
+    gap: 3em 7em;
+  }
+  .counter-icon {
+    font-size: calc(2.5em + 1vmin);
+  }
+  .counter__number {
+    font-size: calc(2em + 1vmin);
+  }
+  .counter__title {
+    font-size: calc(1.2em + 1vmin);
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 649px) {
+  .counters {
+    height: 100vh;
+  }
+  .counter__grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "one"
+      "two"
+      "three";
+  }
+  .counter:not(:last-child) .counter__title {
+    border-bottom: 3px white solid;
+    padding-bottom: 1.5em;
+  }
 }
