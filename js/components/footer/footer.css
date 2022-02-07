@@ -79,7 +79,6 @@
 .footer__submit:hover {
   background-color: white;
   color: var(--custom-orange);
-  transition: 250ms;
 }
 
 .footer__submit:active {
@@ -97,6 +96,7 @@
 .contact__address {
   font-weight: 300;
 }
+
 .contact__links {
   display: flex;
   flex-direction: column;
@@ -159,7 +159,7 @@
 .popup__title {
   color: #636363;
   font-size: 2.8rem;
-  margin: .3em;
+  margin: 0.3em;
 }
 
 .popup__description {
@@ -178,7 +178,6 @@
   width: 100%;
   text-transform: uppercase;
   text-align: center;
-  transition: 250ms;
 }
 
 .popup__close:hover {
@@ -188,6 +187,21 @@
 
 .popup__close:active {
   transform: scale(0.98);
+}
+
+.footer__btn {
+  padding: 0.5em;
+  max-width: 40%;
+  font-size: 1rem;
+  border-style: none;
+  background-color: var(--custom-orange);
+  color: white;
+  margin-top: .5em;
+}
+
+.footer__btn:hover {
+  background-color: white;
+  color: var(--custom-orange);
 }
 
 @media screen and (min-width: 700px) and (max-width: 1120px) {
@@ -217,8 +231,8 @@
     margin-top: 0;
   }
   .popup__close {
-    padding: .1em 2.5em;
-    margin-top: .5em;
+    padding: 0.1em 2.5em;
+    margin-top: 0.5em;
   }
 }
 
@@ -236,8 +250,8 @@
     font-size: 1.3rem;
   }
   .popup__close {
-    padding: .1em 2.5em;
-    margin-top: .5em;
+    padding: 0.1em 2.5em;
+    margin-top: 0.5em;
   }
 }
 
@@ -257,8 +271,8 @@
     margin-bottom: 0;
   }
   .popup__close {
-    padding: .1em 2em;
-    margin-top: .9em;
+    padding: 0.1em 2em;
+    margin-top: 0.9em;
   }
 }
 
@@ -275,5 +289,8 @@
   }
   .footer__discover {
     text-align: left;
+  }
+  .footer__btn {
+    max-width: 40%;
   }
 }

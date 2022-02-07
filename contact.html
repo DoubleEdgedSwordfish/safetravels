@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="js/components/contact/contact.css">
+    <title>Contact us</title>
+</head>
+
+<body>
+    <div class="contact">
+        <h1 class="contact__title">Contact us</h1>
+        <p class="contact__subtitle"><i>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</i></p>
+        <form class="contact__form">
+            <div class="form__control">
+                <label for="name">Name <span>*</span></label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+            </div>
+            <div class="form__control">
+                <label for="email">Email <span>*</span></label>
+                <input type="text" id="email" placeholder="Enter your email address" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+            </div>
+            <div class="form__control">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="912-345-678">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small class="contact__format">Format: 123-456-789</small>
+            </div>
+            <div class="form__control">
+                <label for="message">Message</label>
+                <br>
+                <textarea class="contact__textarea" name="message" id="message" placeholder="Send us a message"></textarea>
+            </div>
+            <p class="contact__warning"><span>*</span> Required field</p>
+            <button class="contact__submit" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="https://kit.fontawesome.com/3eb5bb5574.js" crossorigin="anonymous"></script>
+    <script src="js/plugins.js"></script>
+    <script src="/js/components/contact/contact.js"></script>
+</body>
+
+</html>

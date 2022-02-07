@@ -1,8 +1,4 @@
 .counters {
-  /*   background-image: url(/img/images/counter-background.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #ba21269c; */
   height: 70vh;
   background-color: #ba212677;
   display: flex;
@@ -21,7 +17,6 @@
   max-width: 100%;
   height: auto;
   min-height: 100%;
-
 }
 
 .counter__grid {
