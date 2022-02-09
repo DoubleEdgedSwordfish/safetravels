@@ -31,8 +31,12 @@ function checkInputs() {
     setSucessFor(email);
   }
 
-  if (phoneValue !== "") {
+  if (phoneValue.length < 9 && phoneValue !== "") {
+    setErrorFor(tel, "Phone number must have 9 numbers");
+  } else if (phoneValue !== "") {
     setSucessFor(tel);
+  } else {
+    setDefaultFor(tel);
   }
 }
 
@@ -52,6 +56,11 @@ function setSucessFor(input) {
   formControl.className = "form__control success";
 }
 
+function setDefaultFor(input) {
+  const formControl = input.parentElement;
+  formControl.className = "form__control default";
+}
+
 function isEmail(email) {
   return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
     email
@@ -63,14 +72,10 @@ const remainingChars = document.querySelector(".textarea__characters");
 const maxChars = 200;
 
 textArea.addEventListener("input", () => {
-  // Check for the remaining characters 
+  // Check for the remaining characters
   const remaining = maxChars - textArea.value.length;
   const color = remaining < maxChars * 0.1 ? "red" : "black";
 
   remainingChars.textContent = `${remaining} characters remaining`;
   remainingChars.style.color = color;
-
-  if (remainingChars <= 0) {
-    textArea.disabled = true;
-  }
 });
