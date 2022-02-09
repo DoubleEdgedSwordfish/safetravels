@@ -42,31 +42,56 @@
 }
 
 .contact__form input {
-  padding: 0.8em;
+  padding: 0.7em;
 }
 
-.form__control input::placeholder {
-  color: #1173c9c7;
+.contact__error {
+  color: black;
+  font-size: 0.9rem;
+  color: #e74c3c;
+  visibility: hidden;
+}
+
+.form__control.error small {
+  visibility: visible;
+}
+
+.form__control input::placeholder,
+.contact__textarea::placeholder {
+  color: #1173c98c;
 }
 
 .contact__format {
   color: black;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .contact__textarea {
   width: 94%;
-  height: 4em;
+  height: 4.8em;
   resize: none;
   padding: 0.8em;
 }
 
-.contact__textarea::placeholder {
-  color: #1173c9c7;
+.textarea__characters {
+  font-size: .8rem;
+  color: black;
+  position: absolute;
+  right: 0;
 }
 
 .form__control {
   position: relative;
   margin-bottom: 0.5em;
+}
+
+.form__control input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #1173c9c7;
+  box-shadow: 0 0 6px #719ece;
 }
 
 .form__control.success input {
@@ -84,7 +109,7 @@
 .form__control i {
   visibility: hidden;
   position: absolute;
-  top: 40px;
+  top: 38px;
   right: 10px;
 }
 
