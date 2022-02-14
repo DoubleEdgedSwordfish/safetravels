@@ -81,10 +81,6 @@
   color: var(--custom-orange);
 }
 
-.footer__submit:active {
-  transform: scale(0.98);
-}
-
 .footer__contact {
   font-size: 0.9rem;
 }
@@ -183,10 +179,6 @@
 .popup__close:hover {
   background-color: white;
   color: #94ca50;
-}
-
-.popup__close:active {
-  transform: scale(0.98);
 }
 
 .footer__btn {

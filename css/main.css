@@ -22,9 +22,6 @@
 
   // Info
   Add a 3D hover effect to the cards
-
-  // Mobile nav
-  Align the icons to the buttons
   
   // Completed
   Add nicely done fade-in animations for text/CTAs
@@ -106,6 +103,10 @@ button {
   border-radius: 3px;
   cursor: pointer;
   transition: 250ms;
+}
+
+button:active {
+  transform: scale(0.98);
 }
 
 input {

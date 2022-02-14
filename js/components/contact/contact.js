@@ -25,6 +25,7 @@ function checkInputs() {
 
   if (emailValue === "") {
     setErrorFor(email, "Email cannot be blank");
+    fullName
   } else if (!isEmail(emailValue)) {
     setErrorFor(email, "Email is not valid");
   } else {
@@ -33,6 +34,8 @@ function checkInputs() {
 
   if (phoneValue.length < 9 && phoneValue !== "") {
     setErrorFor(tel, "Phone number must have 9 numbers");
+  } else if (phoneValue.length >= 12 && phoneValue !== "") {
+    setErrorFor(tel, "Phone number must have less than 12 numbers");
   } else if (phoneValue !== "") {
     setSucessFor(tel);
   } else {
@@ -48,8 +51,13 @@ function setErrorFor(input, message) {
   errorMessage.innerText = message;
 
   // Add error class
-  formControl.className = "form__control error";
+  formControl.className = "form__control shake error";
 }
+
+setTimeout((input) => {
+  const formControl = input.parentElement;
+  formControl.classList.remove('shake')
+}, 2000)
 
 function setSucessFor(input) {
   const formControl = input.parentElement;

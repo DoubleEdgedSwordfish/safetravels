@@ -131,10 +131,6 @@
   display: none;
 }
 
-.burger__cta:active {
-  transform: scale(0.98);
-}
-
 .form {
   display: flex;
   padding: 1em;
@@ -213,10 +209,6 @@
 
   .close__cta:hover {
     color: antiquewhite;
-  }
-
-  .close__cta:active {
-    transform: scale(0.98);
   }
 
   .menu__items {

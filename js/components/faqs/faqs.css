@@ -118,11 +118,6 @@
   color: white;
 }
 
-.positive:active,
-.negative:active {
-  transform: scale(0.98);
-}
-
 @media screen and (min-width: 711px) and (max-width: 940px) {
   .rating__cta {
     padding: 0.2em 1.2em;
