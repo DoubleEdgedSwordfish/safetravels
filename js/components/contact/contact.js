@@ -1,3 +1,5 @@
+import Toast from '../toast/toast';
+
 const form = document.querySelector(".contact__form");
 const fullName = document.getElementById("name");
 const email = document.getElementById("email");
@@ -23,6 +25,7 @@ function checkInputs() {
     setSucessFor(fullName);
   }
 
+  // Email validation
   if (emailValue === "") {
     setErrorFor(email, "Email cannot be blank");
     fullName
@@ -32,6 +35,7 @@ function checkInputs() {
     setSucessFor(email);
   }
 
+  // Phone number validation
   if (phoneValue.length < 9 && phoneValue !== "") {
     setErrorFor(tel, "Phone number must have 9 numbers");
   } else if (phoneValue.length >= 12 && phoneValue !== "") {
@@ -40,6 +44,15 @@ function checkInputs() {
     setSucessFor(tel);
   } else {
     setDefaultFor(tel);
+  }
+
+  // If required inputs are empty, show gray toast
+  if (nameValue === "" && emailValue === "") {
+    new Toast("Please fill in the required fields", "empty");
+  }
+  // If required inputs are filled, show sucess toast
+  if (nameValue !== "" && emailValue !== "" && isEmail(emailValue)) {
+    new Toast("Form submited sucessfully!", 'sucess');
   }
 }
 

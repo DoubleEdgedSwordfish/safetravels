@@ -2,10 +2,22 @@
   margin-bottom: 3em;
 }
 
+@keyframes fadeIn {
+  0% {
+    transform:translateY(25%);
+    opacity: 0;
+  }
+  100% {
+    transform:translateY(0);
+    opacity: 1;
+  }
+}
+
 .places__title {
   font-size: 5rem;
   text-align: center;
   padding-top: .2em;
+  margin-top: 0;
   margin-bottom: .4em;
   color: var(--primary-color);
 }
@@ -222,6 +234,10 @@
   }
   .places__title {
     margin: 0 0 0.5em 0;
+    font-size: 4.2rem;
+  }
+  .places__description {
+    font-size: 2rem;
   }
   .places__grid {
     gap: 1.7em;
