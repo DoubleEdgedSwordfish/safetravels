@@ -26,6 +26,6 @@ let observer = new IntersectionObserver(entries => {
     }
   });
 });
-observer.observe(infoTitle, infoSubtitle, cardOne, cardTwo, cardThree, cardFour);
+observer.observe(infoTitle);
 
 

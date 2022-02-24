@@ -8,7 +8,8 @@ export default class Toast {
         // Close the toast after 5 seconds 
         setTimeout(() => {
             this.close()
-        }, 4000)
+        }, 3000)
+        document.querySelector(`[data-status="${this.type}"]`)?.remove();
         this.create()
     }
     create() {

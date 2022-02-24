@@ -50,6 +50,7 @@ function checkInputs() {
   if (nameValue === "" && emailValue === "") {
     new Toast("Please fill in the required fields", "empty");
   }
+
   // If required inputs are filled, show sucess toast
   if (nameValue !== "" && emailValue !== "" && isEmail(emailValue)) {
     new Toast("Form submited sucessfully!", 'sucess');

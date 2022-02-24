@@ -45,10 +45,12 @@
   font-size: 0.8rem;
   position: relative;
 }
+
 .footer__subscribe {
   font-weight: 300;
   margin-bottom: 0.5em;
 }
+
 .footer__form {
   display: flex;
 }
@@ -181,17 +183,19 @@
   color: #94ca50;
 }
 
-.footer__btn {
+.footer__btn,
+.footer__news {
   padding: 0.5em;
   max-width: 40%;
   font-size: 1rem;
   border-style: none;
   background-color: var(--custom-orange);
   color: white;
-  margin-top: .5em;
+  margin-top: .8em;
 }
 
-.footer__btn:hover {
+.footer__btn:hover,
+.footer__news:hover {
   background-color: white;
   color: var(--custom-orange);
 }
