@@ -70,17 +70,13 @@
   padding: 0.8em;
 }
 
-.message__error {
- /* Fixthis */
-}
-
 .textarea__characters {
   font-size: 0.8rem;
   color: black;
   position: absolute;
   right: 0;
   color: rgb(184, 184, 184);
-  padding-bottom: 1.8em;
+  padding-bottom: 3em;
   visibility: hidden;
 }
 
@@ -216,5 +212,8 @@
 @media screen and (min-width: 320px) and (max-width: 435px) {
   .textarea__characters {
     font-size: 0.75rem;
+  }
+  .contact__textarea {
+    width: 90%;
   }
 }

@@ -13,6 +13,7 @@ const getNewsData = async () => {
     })
     .catch((err) => {
       console.log(err);
+      // Show 404 page 
       document.querySelector('.error__container').style.display = 'block';
       document.querySelector('.news__title').style.display = 'none';
     });

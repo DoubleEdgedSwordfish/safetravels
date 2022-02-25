@@ -4,7 +4,7 @@ const accordionHeader = document.querySelectorAll(".accordion__header");
 
 accordionHeader.forEach((header) => {
   header.addEventListener("click", () => {
-    // If an accordion is already open then close it
+    // If an accordion is already open it andthen close it
     const isAccordionOpen = document.querySelector(".accordion__header.active");
     if (isAccordionOpen && isAccordionOpen !== header) {
       isAccordionOpen.classList.remove("active");

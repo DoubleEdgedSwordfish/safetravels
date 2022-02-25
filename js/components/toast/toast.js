@@ -4,10 +4,11 @@ export default class Toast {
         this.message = message;
         this.type = type;
 
-        // Close the toast after 5 seconds 
+        // Close the toast after 3 seconds 
         setTimeout(() => {
             this.close()
         }, 3000)
+        // Prevent additional toasts from being created
         document.querySelector(`[data-status="${this.type}"]`)?.remove();
         this.create()
     }
@@ -22,7 +23,7 @@ export default class Toast {
 
         const button = document.createElement('button');
         button.classList.add('toast__close');
-        button.innerHTML = '<span> <i class="fas fa-times"></i></span>'
+        button.innerHTML = '<span><i class="fas fa-times"></i></span>'
         button.addEventListener('click', this.close.bind(this));
 
         this.toast.append(text, button)

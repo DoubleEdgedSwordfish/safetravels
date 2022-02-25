@@ -7,6 +7,7 @@ const emailPopupMessage = document.querySelector('.popup__description');
 submitBtn.addEventListener("click", (e) => {
   if (mailInput.value !== null && mailInput.value !== "") {
     e.preventDefault();
+    // Show popup upon clicking button 
     emailPopup.style.display = "flex"
     emailPopupMessage.textContent = `An email has been sent to ${mailInput.value}`
     mailInput.value = ""

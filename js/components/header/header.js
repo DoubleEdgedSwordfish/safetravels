@@ -18,7 +18,7 @@ function closeMobileMenu() {
 burgerBtn.addEventListener("click", () => {
   mobileMenu.classList.remove("mobile__nav--close");
   mobileMenu.classList.add("mobile__nav--open");
-  document.body.style.overflow = "hidden";
+  document.body.style.overflow = "hidden"; // Prevents scrolling when mobile menu is open
   window.removeEventListener("scroll", navScroll);
 });
 
@@ -28,12 +28,13 @@ mobileNavLinks.forEach((mobileLink) => {
   });
 });
 
-// Add functionality to the fixed nav
+// Add functionality to fixed nav
 let lastScrollY = window.scrollY;
 window.addEventListener("scroll", navScroll);
 
 function navScroll() {
   if (lastScrollY < window.scrollY) {
+    // Hide or show nav bar based if user is scrolling or not
     nav.classList.add("nav--hidden");
     nav.classList.add("nav-scroll");
   } else {
@@ -41,7 +42,7 @@ function navScroll() {
   }
   lastScrollY = window.scrollY;
 
-  // If user is scrolling hide the nav bar
+  // If user is scrolling up hide the nav bar
   if (window.scrollY <= 0) {
     nav.classList.remove("nav-scroll");
   }

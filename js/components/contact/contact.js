@@ -100,6 +100,7 @@ function isEmail(email) {
 
 const textArea = document.querySelector(".contact__textarea");
 const remainingChars = document.querySelector(".textarea__characters");
+const errorMessage = document.querySelector('.message__error');
 const maxChars = 200;
 
 textArea.addEventListener("input", () => {
@@ -109,10 +110,12 @@ textArea.addEventListener("input", () => {
 
   if (remaining > 0) {
     remainingChars.style.visibility = "visible";
+    errorMessage.style.visibility = "hidden";
   }
 
   if (textArea.value.length === 0) {
     remainingChars.style.visibility = "hidden";
+    errorMessage.style.visibility= "visible";
   }
 
   remainingChars.textContent = `${remaining} characters remaining`;
