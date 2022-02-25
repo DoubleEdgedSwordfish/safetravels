@@ -15,7 +15,7 @@ accordionHeader.forEach((header) => {
     header.classList.toggle("active");
     const accordionContent = header.nextElementSibling;
     if (header.classList.contains("active")) {
-      accordionContent.style.maxHeight = accordionContent.scrollHeight + "10" + "px";
+      accordionContent.style.maxHeight = accordionContent.scrollHeight + 10 + "px";
     } else {
       header.classList.remove("active")
       accordionContent.style.maxHeight = 0.01 + "px";

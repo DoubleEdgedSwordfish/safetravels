@@ -57,7 +57,7 @@
   color: #666666;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.1s;
+  transition: max-height 0.2s;
   padding:0 1em;
   border: 1px solid #ccc;
 }

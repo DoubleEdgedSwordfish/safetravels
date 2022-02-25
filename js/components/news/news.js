@@ -48,9 +48,9 @@ function createNews(data) {
   newsHeading.classList.add("news__heading");
   newsHeading.textContent = `${data.title}`;
 
-  const newsDescription = document.createElement("p");
+  const newsDescription = document.createElement("div");
   newsDescription.classList.add("news__description");
-  newsDescription.textContent = `${data.description}`;
+  newsDescription.innerHTML = `${data.description}`;
 
   newsArticle.append(newsLink);
   newsLink.append(newsContent);
