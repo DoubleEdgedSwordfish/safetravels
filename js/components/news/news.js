@@ -1,3 +1,4 @@
+import Toast from '../toast/toast';
 require("babel-polyfill");
 
 const getNewsData = async () => {
@@ -13,6 +14,8 @@ const getNewsData = async () => {
     })
     .catch((err) => {
       console.log(err);
+      document.querySelector('.error__container').style.display = 'block';
+      document.querySelector('.news__title').style.display = 'none';
     });
 };
 

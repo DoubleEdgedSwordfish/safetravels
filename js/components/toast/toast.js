@@ -1,5 +1,4 @@
 import './toast.css';
-
 export default class Toast {
     constructor(message, type) {
         this.message = message;

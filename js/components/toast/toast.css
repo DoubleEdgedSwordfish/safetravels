@@ -31,15 +31,13 @@
     background: linear-gradient(90deg, rgba(157,177,175,1) 0%, rgba(148,187,233,1) 100%);
 }
 
-.toast [data-status="info"] {
-    background: linear-gradient(to right, #2563eb, #3b82f6);
-    position: fixed;
-    bottom: 0;
-    left: 20%;
+.toast [data-status="error"] {
+    background: linear-gradient(to right, #ef4444, #ec4899);
 }
 
 .toast [data-status="sucess"]::before,
-.toast [data-status="empty"]::before {
+.toast [data-status="empty"]::before,
+.toast [data-status="error"]::before {
     font-family: "Font Awesome 5 Free";
     margin-right: .3em;
     margin-top: .1em;
@@ -53,7 +51,7 @@
     content:"\f071";
 }
 
-.toast [data-status="info"]::before {
+.toast [data-status="error"]::before {
     content: '\f30f';
 }
 

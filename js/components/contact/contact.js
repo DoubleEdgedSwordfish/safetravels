@@ -1,4 +1,4 @@
-import Toast from '../toast/toast';
+import Toast from "../toast/toast";
 
 const form = document.querySelector(".contact__form");
 const fullName = document.getElementById("name");
@@ -28,7 +28,7 @@ function checkInputs() {
   // Email validation
   if (emailValue === "") {
     setErrorFor(email, "Email cannot be blank");
-    fullName
+    fullName;
   } else if (!isEmail(emailValue)) {
     setErrorFor(email, "Email is not valid");
   } else {
@@ -53,7 +53,7 @@ function checkInputs() {
 
   // If required inputs are filled, show sucess toast
   if (nameValue !== "" && emailValue !== "" && isEmail(emailValue)) {
-    new Toast("Form submited sucessfully!", 'sucess');
+    new Toast("Form submited sucessfully!", "sucess");
   }
 }
 
@@ -70,8 +70,8 @@ function setErrorFor(input, message) {
 
 setTimeout((input) => {
   const formControl = input.parentElement;
-  formControl.classList.remove('shake')
-}, 2000)
+  formControl.classList.remove("shake");
+}, 2000);
 
 function setSucessFor(input) {
   const formControl = input.parentElement;
@@ -96,7 +96,15 @@ const maxChars = 200;
 textArea.addEventListener("input", () => {
   // Check for the remaining characters
   const remaining = maxChars - textArea.value.length;
-  const color = remaining < maxChars * 0.1 ? "red" : "black";
+  const color = remaining < maxChars * 0.1 ? "red" : "gray";
+
+  if (remaining > 0) {
+    remainingChars.style.visibility = "visible";
+  } 
+
+  if (textArea.value.length === 0) {
+    remainingChars.style.visibility = "hidden";
+  }
 
   remainingChars.textContent = `${remaining} characters remaining`;
   remainingChars.style.color = color;

@@ -76,6 +76,8 @@
   position: absolute;
   right: 0;
   bottom: -10%;
+  color: rgb(184, 184, 184);
+  visibility: hidden;
 }
 
 .form__control {
@@ -145,7 +147,7 @@ textarea:focus {
 .contact__warning {
   color: black;
   font-size: 1rem;
-  padding-top: 0.5em;
+
 }
 
 .contact__submit {
