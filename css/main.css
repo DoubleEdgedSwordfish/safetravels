@@ -14,28 +14,6 @@
   --nav-height: 50px;
 }
 
-/* Todos:
-  
-  // Header Section
-  Add some animations to the mobile nav links
-  Add a new background image to the tablet menu
-
-  // Info
-  Add a 3D hover effect to the cards
-  
-  // Completed
-  Add nicely done fade-in animations for text/CTAs
-  Add animations on hover effects for the nav bar *** Done
-  Make the nav bar fixed 
-  Change the placeholder text for the date inputs
-
-  // Cookies
-  Add a cookies section to the website running asynch
-
-  // Reviews
-  Make the grid responsive
-*/
-
 html {
   color: #222;
   font-size: 1em;

@@ -4,6 +4,7 @@ const form = document.querySelector(".contact__form");
 const fullName = document.getElementById("name");
 const email = document.getElementById("email");
 const tel = document.getElementById("phone");
+const message = document.getElementById("message");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -15,6 +16,7 @@ function checkInputs() {
   const nameValue = fullName.value.trim();
   const emailValue = email.value.trim();
   const phoneValue = tel.value.trim();
+  const messageValue = message.value.trim();
 
   if (nameValue === "") {
     // Show error
@@ -46,13 +48,20 @@ function checkInputs() {
     setDefaultFor(tel);
   }
 
+  // Message/text are validation
+  if (messageValue === "") {
+    setErrorFor(message, "Message cannot be blank");
+  } else {
+    setSucessFor(message);
+  }
+
   // If required inputs are empty, show gray toast
-  if (nameValue === "" && emailValue === "") {
+  if (nameValue === "" || emailValue === "" || messageValue === "") {
     new Toast("Please fill in the required fields", "empty");
   }
 
   // If required inputs are filled, show sucess toast
-  if (nameValue !== "" && emailValue !== "" && isEmail(emailValue)) {
+  if (nameValue !== "" && emailValue !== "" && isEmail(emailValue) && messageValue !== "") {
     new Toast("Form submited sucessfully!", "sucess");
   }
 }
@@ -100,7 +109,7 @@ textArea.addEventListener("input", () => {
 
   if (remaining > 0) {
     remainingChars.style.visibility = "visible";
-  } 
+  }
 
   if (textArea.value.length === 0) {
     remainingChars.style.visibility = "hidden";

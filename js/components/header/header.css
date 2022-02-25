@@ -252,7 +252,7 @@
   }
 
   .header__title {
-    margin-top: 0.5em;
+    padding-top: 1em;
     font-size: 4rem;
     font-weight: 500;
   }
@@ -313,7 +313,7 @@
 }
 
 /* Tablet Query */
-@media screen and (min-width: 520px) and (max-width: 1020px) {
+@media screen and (min-width: 520px) and (max-width: 1090px) {
   .hero {
     background-image: url(/img/images/background-tablet.jpg);
     background-repeat: no-repeat;
@@ -321,33 +321,23 @@
     background-position: center;
     position: relative;
   }
-
-  .mobile__nav {
-    /* If needs be, add a new mobile background image to the tablet menu */
-    /* background-image: url(/img/svg/tablet-nav.svg); */
-  }
-
   .header__title {
     margin-top: 0.5em;
     font-size: 5.5rem;
     font-weight: 500;
   }
-
   .header__description {
     font-size: 2rem;
     font-weight: 400;
     text-align: center;
   }
-
   .header__cta {
     padding: 2em 3em;
     font-size: 0.5rem;
   }
-
   .form {
     margin-top: 11em;
   }
-
   .burger__cta {
     display: block;
   }
@@ -364,20 +354,17 @@
     border-style: none;
     gap: 0.5em;
   }
-
   .input__destination,
   .check-in,
   .check-out,
   .input__people {
     margin-left: 0;
   }
-
   .search__cta {
     margin: 0.4em 0 0 0;
     width: 70%;
     min-width: 50%;
   }
-
   .header__cta:hover {
     box-shadow: inset 300px 0 0 0 white;
     color: var(--secondary-color);

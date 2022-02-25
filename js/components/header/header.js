@@ -41,6 +41,7 @@ function navScroll() {
   }
   lastScrollY = window.scrollY;
 
+  // If user is scrolling hide the nav bar
   if (window.scrollY <= 0) {
     nav.classList.remove("nav-scroll");
   }

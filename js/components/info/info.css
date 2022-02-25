@@ -8,20 +8,23 @@
   color: var(--primary-color);
   text-align: center;
   font-size: 5rem;
-  padding-top: 0.5em;
-  margin-bottom: 0.6em;
+  padding-top: 0.4em;
+  margin-bottom: 0.2em;
   line-height: 1.1;
 }
+
 .info__description {
   text-align: center;
   font-size: 2.2rem;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
+
 .card__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3em;
 }
+
 .info__card {
   border-style: none;
   border-bottom: 5px solid var(--secondary-color);
@@ -34,7 +37,6 @@
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
-
 
 @keyframes left-slide {
   from {
@@ -65,14 +67,14 @@
   color: var(--secondary-color);
 }
 
-.info__card__title {
+.card__title {
   font-weight: bold;
   font-size: 2.2rem;
   color: #295071;
   margin: 0.4em 0;
 }
 
-.info__card__description {
+.card__description {
   color: #295071;
 }
 

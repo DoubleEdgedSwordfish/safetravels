@@ -183,6 +183,10 @@
   color: #94ca50;
 }
 
+.footer__news {
+  width: 100%;
+}
+
 .footer__btn,
 .footer__news {
   padding: 0.5em;
@@ -286,7 +290,8 @@
   .footer__discover {
     text-align: left;
   }
-  .footer__btn {
+  .footer__btn,
+  .footer__news {
     max-width: 40%;
   }
 }

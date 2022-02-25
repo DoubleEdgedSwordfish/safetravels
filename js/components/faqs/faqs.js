@@ -6,31 +6,19 @@ accordionHeader.forEach((header) => {
   header.addEventListener("click", () => {
     // If an accordion is already open then close it
     const isAccordionOpen = document.querySelector(".accordion__header.active");
-    if (isAccordionOpen && isAccordionOpen !== accordionHeader) {
-      isAccordionOpen.classList.toggle("active");
-      isAccordionOpen.nextElementSibling.style.maxHeight = null;
+    if (isAccordionOpen && isAccordionOpen !== header) {
+      isAccordionOpen.classList.remove("active");
+      isAccordionOpen.nextElementSibling.style.maxHeight = 0.10 + "px"
     }
     
-    // Open and close an accordio at will
+    // Open and close an accordion at will
     header.classList.toggle("active");
     const accordionContent = header.nextElementSibling;
     if (header.classList.contains("active")) {
-      accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
+      accordionContent.style.maxHeight = accordionContent.scrollHeight + "10" + "px";
     } else {
       header.classList.remove("active")
-      accordionContent.style.maxHeight = null;
+      accordionContent.style.maxHeight = 0.01 + "px";
     }
   });
 });
-
-/* function setAccordionContentHeight() {
-  const elements = document.querySelectorAll('.accordion__content > div')
-
-  elements.forEach(el => {
-    el.parentElement.style.setProperty('--item-height', (el.offsetHeight + 32) + 'px');
-  })
-}
-
-window.addEventListener('resize', setAccordionContentHeight);
-
-setAccordionContentHeight(); */

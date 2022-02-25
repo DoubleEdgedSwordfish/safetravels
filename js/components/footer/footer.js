@@ -18,5 +18,6 @@ submitBtn.addEventListener("click", (e) => {
 const closeBtn = document.querySelector('.popup__close');
 const emailPopup = document.querySelector('.footer__popup');
 closeBtn.addEventListener('click', () => {
+  // Close popup
   emailPopup.style.display = "none";
 })

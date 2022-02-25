@@ -1,7 +1,7 @@
 .reviews {
   background-color: var(--blue-blackground);
   color: white;
-  margin-bottom: 3em;
+  margin-bottom: 1.5em;
   text-shadow: var(--text-shadow);
   overflow: hidden;
   padding-left: 2em;

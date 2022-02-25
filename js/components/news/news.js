@@ -1,9 +1,8 @@
-import Toast from '../toast/toast';
 require("babel-polyfill");
 
 const getNewsData = async () => {
   await fetch(
-    "https://newsapi.org/v2/everything?q=japan&from=2022-02-22&language=en&apiKey=de47336b12584399963ce449470a7800"
+    "https://newsapi.org/v2/everything?q=japan&from=2022-02-25&language=en&apiKey=de47336b12584399963ce449470a7800"
   )
     .then((res) => res.json())
     .then((data) => {

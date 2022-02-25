@@ -67,3 +67,10 @@
     top: 4px;
     right: 2px;
 }
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+    .toast__item {
+        margin-top: 2.2em;
+        font-size: .85rem;
+    }
+}
